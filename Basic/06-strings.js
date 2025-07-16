@@ -19,7 +19,7 @@ console.log(greeting.length)
 // Acceso a caracteres
 
 console.log(greeting[0])
-console.log(greeting[11])
+console.log(greeting[5])
 
 // Métodos comunes
 
