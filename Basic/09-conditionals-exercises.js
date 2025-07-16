@@ -69,45 +69,48 @@ switch(mes){
     default:
         console.log('Mes no válido');
 }
+
 // 7. Muestra el número de días que tiene un mes dependiendo de la variable del ejercicio anterior
-// (usa la variable 'mes')
 switch(mes){
     case 'febrero':
-        console.log(`Tiene 28 dias`)
-        break
-    case `enero`:
-    case `marzo`:
-    case `mayo` :
-    case `julio`:
-    case `agosto`:
-    case `octubre`:
-    case `diciembre`:
-        console.log(`31 dias`)
-        break
-    default: console.log(`30 dias`)
-}
-// 8. Usa un switch para imprimir un mensaje de saludo diferente dependiendo del idioma
-const idioma = "es";
-
-switch(idioma){
-    case "es":
-        console.log("¡Hola!");
+        console.log('Tiene 28 dias');
         break;
-    case "en":
-        console.log("Hello!");
+    case 'enero':
+    case 'marzo':
+    case 'mayo':
+    case 'julio':
+    case 'agosto':
+    case 'octubre':
+    case 'diciembre':
+        console.log('31 dias');
         break;
-    case "fr":
-        console.log("Bonjour!");
-        break;
-    case "de":
-        console.log("Hallo!");
-        break;
-    case "it":
-        console.log("Ciao!");
+    case 'abril':
+    case 'junio':
+    case 'septiembre':
+    case 'noviembre':
+        console.log('30 dias');
         break;
     default:
-        console.log("Idioma no soportado");
+        console.log('Mes no válido');
 }
+
+// 8. Usa un if para imprimir un mensaje de saludo diferente dependiendo del idioma
+const idioma = "es";
+
+if (idioma === "es") {
+    console.log("¡Hola!");
+} else if (idioma === "en") {
+    console.log("Hello!");
+} else if (idioma === "fr") {
+    console.log("Bonjour!");
+} else if (idioma === "de") {
+    console.log("Hallo!");
+} else if (idioma === "it") {
+    console.log("Ciao!");
+} else {
+    console.log("Idioma no soportado");
+}
+
 // 9. Usa un switch para hacer de nuevo el ejercicio 6
 // (usa la variable 'mes')
 
