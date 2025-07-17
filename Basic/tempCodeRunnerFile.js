@@ -1,1 +1,1 @@
-nombre
+ista.splice(indexOf(lista[i]), 1, lista[i].toUpperCase())  
