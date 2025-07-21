@@ -10,13 +10,13 @@ Vídeo: https://youtu.be/1glVfFxj8a4?t=14146
 console.log(`Ejercicio 1`)
 
 const suma = (a = 0, b = 0) => {return a + b}
-console.log(suma(1, 2))
+console.log(suma(5, 7))
 
 // 2. Crea una función que reciba un array de números y devuelva el mayor de ellos
 
 console.log(`Ejercicio 2`)
 
-const numerosRandom = [12, 5, 27, 3, 93, 42, 7];
+const numerosRandom = [100, 10, 13, 1, 1000];
 function funcMayor(array){
     let mayor = 0
     for(let i = 0; i < array.length; i++){
@@ -34,7 +34,7 @@ console.log(funcMayor(numerosRandom)
 // 3. Crea una función que reciba un string y devuelva el número de vocales que contiene
 console.log(`Ejercicio 3`)
 
-let texto = `el tamal se come con tortilla`
+let texto = `Nunca terminare one piece`
 const nuevaFuncion = function(palabra){
     let vocales = ['a', 'e', 'i', 'o', 'u']
     let i = 0
@@ -60,7 +60,7 @@ function aMayusculas(lista){
     return lista
 }
 
-let palabras = ["hola", "mundo", "javascript", "Funciones"];
+let palabras = ["Cafe", "papa", "cubiertos"];
 
 console.log(aMayusculas(palabras));
 // 5. Crea una función que reciba un número y devuelva true si es primo, y false en caso contrario
@@ -75,7 +75,7 @@ const esPrimo = (numero) => {
 
 }
 
-console.log(esPrimo(14)) // No es primo
+console.log(esPrimo(12)) // No es primo
 
 
 // 6. Crea una función que reciba dos arrays y devuelva un nuevo array que contenga los elementos comunes entre ambos
@@ -92,14 +92,14 @@ function comunes(array1, array2){
     }
     return comunes
 }
-const listaA = ["alphaFox","neonSpike","blueFalcon","shadowDusk","crimsonWave","emberGlow","ghostPulse","lunarMist","nightCrawler","ironBlade"]
-const listaB = ["neonSpike","blueFalcon","sunnyOrb","ghostPulse","crimsonWave","novaBlast","stormEcho","alphaFox","frozenEdge","fireWisp"]
+const listaA = ["Agua", "Celular", "wampi", "Degranar", "Conector", "Camiseta", "Pelo"]
+const listaB = ["Pelo", "Nariz", "Moco", "Camiseta", "Keneth", "Agua", "Wampi"]
 console.log(comunes(listaA, listaB))
 
 // 7. Crea una función que reciba un array de números y devuelva la suma de todos los números pares
 console.log('Ejercicio 7')
 
-let numer = [1, 2, 3, 4, 5, 6, 7, 8 ,9]
+let numer = [12, 5, 13, 1, 8, 144, 78, 32]
 
 function sumaMayores(array){
     let suma = 0
@@ -136,8 +136,8 @@ const inverted = (string) => {
     return palInvertida
 }
 
-console.log(inverted('Mondongo'))
-// 10. Crea una función que calcule el factorial de un número dad
+console.log(inverted('One Piece'))
+// 10. Crea una función que calcule el factorial de un número dado
 console.log('Ejercicio 10')
 
 function factorial(int){
@@ -149,4 +149,6 @@ function factorial(int){
     return resFactorial
 }
 
-console.log(factorial(6))
+let nuevoNumero = 2
+
+console.log(factorial(nuevoNumero))
