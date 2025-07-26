@@ -4,7 +4,15 @@ Vídeo: https://youtu.be/1glVfFxj8a4?t=21421
 */
 
 // 1. Crea un función que utilice error correctamente
+function errorMamalon(){
+    console.log(remate)
+}
 
+try{
+    errorMamalon()
+}catch{
+    console.log('La variable no existe')
+}
 // 2. Crea una función que utilice warn correctamente
 
 // 3. Crea una función que utilice info correctamente
