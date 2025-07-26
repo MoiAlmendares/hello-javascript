@@ -32,7 +32,7 @@ console.log(suma == resta)
 console.log(resta > div)
 console.log(div == multi)
 console.log(multi == exponente)
-console.log(exponente == Incremento)
+console.log(exponente == Incremento) 
 // 5. Utiliza el operador lógico and
 
 // 6. Utiliza el operador lógico or
