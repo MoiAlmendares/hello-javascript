@@ -4,11 +4,39 @@ Vídeo: https://youtu.be/1glVfFxj8a4?t=20392
 */
 
 // 1. Captura una excepción utilizando try-catch
-
+console.log('Ejercicio 1')
+function noNada(algo){
+    if(algo == false){
+        throw new Error('esta variable esta vacia')
+        
+    }
+}
+try{
+    noNada("")
+}catch(err){
+    console.error(`No se puede ejecutar porque ${err.message}`)
+}
 // 2. Captura una excepción utilizando try-catch y finally
-
+console.log('Ejercicio 2')
+function noNadota(algo){
+    if(algo == false){
+        throw new Error('esta variable esta vacia')
+        
+    }
+}
+try{
+    noNadota("")
+}catch(err){
+    console.error(`No se puede ejecutar porque ${err.message}`)
+}finally{
+    console.log('Hazlo de nuevo!')
+}
 // 3. Lanza una excepción genérica
+function errorasoPapa(){
+    throw new Error('Ta equivocado papa')
+}
 
+errorasoPapa()
 // 4. Crea una excepción personalizada
 
 // 5. Lanza una excepción personalizada
