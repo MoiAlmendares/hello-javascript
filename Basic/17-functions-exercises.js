@@ -7,14 +7,16 @@ Vídeo: https://youtu.be/1glVfFxj8a4?t=14146
 
 // 1. Crea una función que reciba dos números y devuelva su suma
 
-console.log(`Ejercicio 1`)
+console.time("Start")
+console.group(`Ejercicio 1`)
 
 const suma = (a = 0, b = 0) => {return a + b}
 console.log(suma(5, 7))
 
+console.groupEnd()
 // 2. Crea una función que reciba un array de números y devuelva el mayor de ellos
 
-console.log(`Ejercicio 2`)
+console.group(`Ejercicio 2`)
 
 const numerosRandom = [100, 10, 13, 1, 1000];
 function funcMayor(array){
@@ -31,8 +33,9 @@ function funcMayor(array){
 console.log(funcMayor(numerosRandom)
 )
 
+console.groupEnd()
 // 3. Crea una función que reciba un string y devuelva el número de vocales que contiene
-console.log(`Ejercicio 3`)
+console.group(`Ejercicio 3`)
 
 let texto = `Nunca terminare one piece`
 const nuevaFuncion = function(palabra){
@@ -48,10 +51,10 @@ const nuevaFuncion = function(palabra){
 }
 
 console.log(nuevaFuncion(texto))
-
+console.groupEnd()
 // 4. Crea una función que reciba un array de strings y devuelva un nuevo array con las strings en mayúsculas
 
-console.log(`Ejercicio 4`)
+console.group(`Ejercicio 4`)
 
 function aMayusculas(lista){
     for(let i = 0; i < lista.length; i++){
@@ -63,8 +66,10 @@ function aMayusculas(lista){
 let palabras = ["Cafe", "papa", "cubiertos"];
 
 console.log(aMayusculas(palabras));
+
+console.groupEnd()
 // 5. Crea una función que reciba un número y devuelva true si es primo, y false en caso contrario
-console.log(`Ejercicio 5`)
+console.group(`Ejercicio 5`)
 
 const esPrimo = (numero) => {
         for(let i = 2; i < numero; i++){
@@ -77,9 +82,9 @@ const esPrimo = (numero) => {
 
 console.log(esPrimo(12)) // No es primo
 
-
+console.groupEnd()
 // 6. Crea una función que reciba dos arrays y devuelva un nuevo array que contenga los elementos comunes entre ambos
-console.log(`Ejercicio 6`)
+console.group(`Ejercicio 6`)
 
 function comunes(array1, array2){
     let comunes = []
@@ -96,8 +101,9 @@ const listaA = ["Agua", "Celular", "wampi", "Degranar", "Conector", "Camiseta", 
 const listaB = ["Pelo", "Nariz", "Moco", "Camiseta", "Keneth", "Agua", "Wampi"]
 console.log(comunes(listaA, listaB))
 
+console.groupEnd()
 // 7. Crea una función que reciba un array de números y devuelva la suma de todos los números pares
-console.log('Ejercicio 7')
+console.group('Ejercicio 7')
 
 let numer = [12, 5, 13, 1, 8, 144, 78, 32]
 
@@ -112,8 +118,10 @@ function sumaMayores(array){
 }
 
 console.log(sumaMayores(numer))
+
+console.groupEnd()
 // 8. Crea una función que reciba un array de números y devuelva un nuevo array con cada número elevado al cuadrado
-console.log('Ejercicio 8')
+console.group('Ejercicio 8')
 
 const numPot = (array) => {
     let nuevoArray = []
@@ -124,8 +132,10 @@ const numPot = (array) => {
 }
 
 console.log(numPot(numer))
+
+console.groupEnd()
 // 9. Crea una función que reciba una cadena de texto y devuelva la misma cadena con las palabras en orden inverso
-console.log('Ejercicio 9')
+console.group('Ejercicio 9')
 
 const inverted = (string) => {
     let palInvertida = []
@@ -137,8 +147,10 @@ const inverted = (string) => {
 }
 
 console.log(inverted('One Piece'))
+
+console.groupEnd()
 // 10. Crea una función que calcule el factorial de un número dado
-console.log('Ejercicio 10')
+console.group('Ejercicio 10')
 
 function factorial(int){
     let resFactorial = 1
@@ -152,3 +164,6 @@ function factorial(int){
 let nuevoNumero = 2
 
 console.log(factorial(nuevoNumero))
+
+console.groupEnd()
+console.timeEnd("Start")

@@ -12,6 +12,8 @@ Vídeo: https://youtu.be/1glVfFxj8a4?t=15675
         apellido: 'Almendares',
         edad: '24' 
     }
+
+    console.table(newObject)
 // 2. Accede y muestra su valor
     
     console.log('Ejercicio 2')
@@ -61,3 +63,5 @@ newObject.intObject = {
 // 10. Comprueba si dos propiedades diferentes son iguales
     console.log('Ejercicio 10')
     console.log(newObject.intObject.valor == newObject.intObject.color)
+
+    console.table(newObject)

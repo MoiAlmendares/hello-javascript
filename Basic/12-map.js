@@ -19,7 +19,7 @@ myMap = new Map([
     ["age", 37]
 ])
 
-console.log(myMap)
+console.table(myMap)
 
 // Métodos y propiedades
 
