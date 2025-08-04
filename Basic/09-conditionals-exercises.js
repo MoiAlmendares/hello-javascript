@@ -28,7 +28,7 @@ if (numero > 0){
 }else if (numero < 0) {
         console.log(`Numero negativo`)
 }else{
-      console.log(`El numero es 0`)  
+    console.log(`El numero es 0`)  
     }
 // 4. Verifica si una persona puede votar o no (mayor o igual a 18) e indica cuántos años le faltan
 const edadPersona = 12;
